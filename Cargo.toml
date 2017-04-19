@@ -1,0 +1,7 @@
+[package]
+name = "jq-tools"
+version = "0.1.0"
+authors = ["hcpl <hcpl.prog@gmail.com>"]
+
+[dependencies]
+nom = "2.2"

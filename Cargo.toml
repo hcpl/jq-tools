@@ -2,6 +2,9 @@
 name = "jq-tools"
 version = "0.1.0"
 authors = ["hcpl <hcpl.prog@gmail.com>"]
+repository = "https://github.com/hcpl/jq-tools"
+readme = "README.md"
+license = "MIT"
 
 [dependencies]
 nom = "2.2"

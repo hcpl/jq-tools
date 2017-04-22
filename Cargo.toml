@@ -8,3 +8,4 @@ license = "MIT"
 
 [dependencies]
 nom = "2.2"
+semver = "0.6"

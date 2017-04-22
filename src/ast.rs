@@ -1,3 +1,23 @@
+use semver::Version;
+
+
+pub trait Feature {
+    fn get_str_version(&self) -> String;
+
+    fn get_version(&self) -> Version {
+        Version::parse(&self.get_str_version()).unwrap()
+    }
+
+    fn has_str_version(&self, str_version: &str) -> bool {
+        self.has_version(&Version::parse(str_version).unwrap())
+    }
+
+    fn has_version(&self, version: &Version) -> bool {
+        *version >= self.get_version()
+    }
+}
+
+
 pub type Identifier = String;
 pub type FuncName = Identifier;
 pub type VarName = Identifier;

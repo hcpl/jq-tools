@@ -1,5 +1,6 @@
 #[macro_use]
 extern crate nom;
+extern crate semver;
 
 mod ast;
 #[macro_use] mod nom_helpers;
